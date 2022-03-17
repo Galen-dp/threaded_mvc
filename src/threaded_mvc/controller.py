@@ -1,6 +1,9 @@
-class Controller:
+import abc
+
+class Controller(abc.ABC):
     """
     Controller Class
     """
+    @abc.abstractmethod
     def __init__(this):
-        print("Controller class init")
+        pass

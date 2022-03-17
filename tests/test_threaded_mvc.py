@@ -2,27 +2,18 @@
 
 """Tests for `threaded_mvc` package."""
 
-#import pytest
+import pytest
 
-
-#from threaded_mvc import Model, View, Controller
 import threaded_mvc.model, threaded_mvc.view, threaded_mvc.controller
 
-mvcmodel = threaded_mvc.model.Model()
-mvcview = threaded_mvc.view.View()
-mvccontroller = threaded_mvc.controller.Controller()
+def test_model_class_is_abstract():
+    with pytest.raises(TypeError):
+        mvcmodel = threaded_mvc.model.Model()
 
-#@pytest.fixture
-#def response():
-#    """Sample pytest fixture.
-#
-#    See more at: http://doc.pytest.org/en/latest/fixture.html
-#    """
-#    # import requests
-#    # return requests.get('https://github.com/audreyr/cookiecutter-pypackage')
+def test_view_class_is_abstract():
+    with pytest.raises(TypeError):
+        mvcview = threaded_mvc.view.View()
 
-
-#def test_content(response):
-#    """Sample pytest test function with the pytest fixture as an argument."""
-#    # from bs4 import BeautifulSoup
-#    # assert 'GitHub' in BeautifulSoup(response.content).title.string
+def test_controller_class_is_abstract():
+    with pytest.raises(TypeError):
+        mvccontroller = threaded_mvc.controller.Controller()
