@@ -1,5 +1,5 @@
 Welcome to threaded_mvc's documentation!
-======================================
+========================================
 
 .. toctree::
    :maxdepth: 2
