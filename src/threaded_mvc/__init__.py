@@ -1,1 +1,3 @@
-__version__ = '0.1.0'
+__version__='0.0.2'
+
+import threaded_mvc.model, threaded_mvc.view, threaded_mvc.controller

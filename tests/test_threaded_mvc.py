@@ -4,7 +4,7 @@
 
 import pytest
 
-import threaded_mvc.model, threaded_mvc.view, threaded_mvc.controller
+import threaded_mvc
 
 def test_model_class_is_abstract():
     with pytest.raises(TypeError):
