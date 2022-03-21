@@ -1,7 +1,7 @@
 import abc
-import queue
 import threading
 
+__version__ = '0.0.3'
 
 class Model(threading.Thread, abc.ABC):
     """_summary_
@@ -29,4 +29,22 @@ class Model(threading.Thread, abc.ABC):
 
         You must override this method in a subclass.
         """
+        pass
+
+
+class View(abc.ABC):
+    """
+    View Class
+    """
+    @abc.abstractmethod
+    def __init__(this):
+        pass
+
+
+class Controller(abc.ABC):
+    """
+    Controller Class
+    """
+    @abc.abstractmethod
+    def __init__(this):
         pass

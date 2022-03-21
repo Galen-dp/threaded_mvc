@@ -4,16 +4,16 @@
 
 import pytest
 
-import threaded_mvc
+from threaded_mvc import Model, View, Controller
 
 def test_model_class_is_abstract():
     with pytest.raises(TypeError):
-        mvcmodel = threaded_mvc.model.Model()
+        mvcmodel = Model()
 
 def test_view_class_is_abstract():
     with pytest.raises(TypeError):
-        mvcview = threaded_mvc.view.View()
+        mvcview = View()
 
 def test_controller_class_is_abstract():
     with pytest.raises(TypeError):
-        mvccontroller = threaded_mvc.controller.Controller()
+        mvccontroller = Controller()
