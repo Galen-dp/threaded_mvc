@@ -4,6 +4,7 @@
 
 import pytest
 
+# import threaded_mvc.Model as Model
 from threaded_mvc import Model, View, Controller
 
 def test_model_class_is_abstract():
