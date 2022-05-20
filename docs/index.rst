@@ -8,7 +8,7 @@ Welcome to threaded_mvc's documentation!
    readme
    installation
    usage
-   modules
+   reference
    contributing
    authors
    history

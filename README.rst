@@ -22,11 +22,14 @@ Threaded Model-View-Controller Design Pattern package for GUI & TUI programs.
 * Free software: BSD license
 * Documentation: https://threaded-mvc.readthedocs.io.
 
-Introduction
-------------
+What is this repo or project?
+-----------------------------
 This is a solution to a common problem with MVC architecture: How do we
 keep the View responsive when the model is i/o bound.
 
+
+How does it work?
+-----------------
 We do this by placing the model in its own thread, and using message
 queues between the Controller and Model.
 
@@ -40,8 +43,28 @@ As per the definition of the MVC design pattern:
 6) controller - sets model states when necessary.
 
 
+Who will use this repo or project?
+----------------------------------
+* TODO
+
+
+What is the goal of this project?
+---------------------------------
+* TODO
+
+
 Features
 --------
+* TODO
+
+
+How to install
+--------------
+* TODO
+
+
+How to use
+----------
 * TODO
 
 
